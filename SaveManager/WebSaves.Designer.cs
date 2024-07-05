@@ -116,7 +116,7 @@
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.AuthorLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WebSaves";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WebSaves";
