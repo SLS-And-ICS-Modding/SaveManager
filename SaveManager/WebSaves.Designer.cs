@@ -39,6 +39,7 @@
             // AuthorLabel
             // 
             this.AuthorLabel.AutoSize = true;
+            this.AuthorLabel.ForeColor = System.Drawing.Color.White;
             this.AuthorLabel.Location = new System.Drawing.Point(238, 13);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Size = new System.Drawing.Size(41, 13);
@@ -48,6 +49,7 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
+            this.NameLabel.ForeColor = System.Drawing.Color.White;
             this.NameLabel.Location = new System.Drawing.Point(238, 26);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(41, 13);
@@ -57,6 +59,7 @@
             // DateLabel
             // 
             this.DateLabel.AutoSize = true;
+            this.DateLabel.ForeColor = System.Drawing.Color.White;
             this.DateLabel.Location = new System.Drawing.Point(238, 39);
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(36, 13);
@@ -65,7 +68,9 @@
             // 
             // SavesList
             // 
+            this.SavesList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.SavesList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SavesList.ForeColor = System.Drawing.Color.White;
             this.SavesList.FormattingEnabled = true;
             this.SavesList.Location = new System.Drawing.Point(13, 13);
             this.SavesList.Name = "SavesList";
@@ -75,30 +80,35 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(239, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 71);
             this.button1.TabIndex = 3;
             this.button1.Text = "Install Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(238, 142);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(225, 71);
             this.button2.TabIndex = 3;
             this.button2.Text = "Upload Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // WebSaves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(476, 303);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
