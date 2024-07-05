@@ -56,6 +56,11 @@ namespace SaveManager
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if(listBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Select save game!!!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }    
             var msg = MessageBox.Show("This will overwrite your current save, are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if(msg == DialogResult.Yes)
             {
