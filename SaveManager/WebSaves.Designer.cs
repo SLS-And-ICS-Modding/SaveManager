@@ -68,6 +68,7 @@
             this.SavesList.Name = "SavesList";
             this.SavesList.Size = new System.Drawing.Size(219, 277);
             this.SavesList.TabIndex = 2;
+            this.SavesList.SelectedIndexChanged += new System.EventHandler(this.SavesList_SelectedIndexChanged);
             // 
             // WebSaves
             // 

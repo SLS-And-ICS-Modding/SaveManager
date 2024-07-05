@@ -32,12 +32,18 @@ namespace SaveManager
                 save.content = (string)item["content"];
                 save.createdate = (string)item["createdate"];
                 saves.Add(save);
+                SavesList.Items.Add(save.name);
             }
             return saves;
         }
         private void WebSaves_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void SavesList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     class Save
