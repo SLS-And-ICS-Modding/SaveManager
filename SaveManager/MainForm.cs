@@ -30,11 +30,11 @@ namespace SaveManager
         Dictionary<string,string> list = new Dictionary<string,string>();
         private void button2_Click(object sender, EventArgs e)
         {
-            string temppatch = Path.GetTempFileName();
+            /*string temppatch = Path.GetTempFileName();
             reg.ExportRegistryKey("HKEY_CURRENT_USER\\Software\\Cheesecake Dev\\Streamer Life Simulator", temppatch);
             string output = System.IO.File.ReadAllText(temppatch);
             string encrypted = Convert.ToBase64String(Encoding.UTF8.GetBytes(output));
-            System.IO.File.WriteAllText($"./savegames/{new Random().Next()}.slsg", $"{DateTime.Now}\n{encrypted}");
+            System.IO.File.WriteAllText($"./savegames/{new Random().Next()}.slsg", $"{DateTime.Now}\n{encrypted}");*/
         }
         private void RefreshList()
         {
