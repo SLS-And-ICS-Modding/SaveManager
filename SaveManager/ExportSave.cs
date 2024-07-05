@@ -26,6 +26,7 @@ namespace SaveManager
             string output = System.IO.File.ReadAllText(temppatch);
             string encrypted = Convert.ToBase64String(Encoding.UTF8.GetBytes(output));
             System.IO.File.WriteAllText($"./savegames/{textBox1.Text}.slsg", $"{DateTime.Now}\n{encrypted}");
+            MessageBox.Show("Successfully saved!","Notify",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }
