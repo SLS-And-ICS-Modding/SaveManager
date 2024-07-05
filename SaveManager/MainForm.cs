@@ -93,7 +93,7 @@ namespace SaveManager
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var msg = MessageBox.Show("Do you want to delete your save game?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            var msg = MessageBox.Show("Do you want to wipe your save game?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (msg == DialogResult.Yes)
             {
                 var msg2 = MessageBox.Show("Your save game will be wiped.\n This action is irreversible.\n do you want to continue?", "Last warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
