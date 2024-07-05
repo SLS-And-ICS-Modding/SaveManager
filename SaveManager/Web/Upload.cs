@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using SaveManager.Web;
 namespace SaveManager.Web
 {
@@ -11,7 +12,17 @@ namespace SaveManager.Web
     {
         public static void UploadSave(Save sv)
         {
-            new WebClient().DownloadString(Web.DOMAIN_URL + $"uploadsave.php?creator={sv.author}&name={sv.name}&content={sv.content}&createdate={sv.createdate}");
+            using (WebClient client = new WebClient())
+            {
+                var data = new System.Collections.Specialized.NameValueCollection();
+                data["creator"] = sv.author;
+                data["name"] = sv.name;
+                data["content"] = sv.content;
+                data["createdate"] = sv.createdate;
+
+                var response = client.UploadValues(Web.DOMAIN_URL + "uploadsave.php", "POST", data);
+                MessageBox.Show(Encoding.UTF8.GetString(response));
+            }
         }
     }
 }
