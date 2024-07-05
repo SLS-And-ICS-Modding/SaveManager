@@ -43,7 +43,10 @@ namespace SaveManager
 
         private void SavesList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Save sv = saves1.Find(x=>x.name == SavesList.SelectedItem.ToString());
+            AuthorLabel.Text = $"Author: {sv.author}";
+            NameLabel.Text = $"Title: {sv.name}";
+            DateLabel.Text = $"Create Date: {sv.createdate}";
         }
     }
     class Save
