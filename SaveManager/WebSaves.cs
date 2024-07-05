@@ -48,9 +48,10 @@ namespace SaveManager
             if (SavesList.SelectedItem == null)
                 return;
             Save sv = saves1.Find(x=>x.name == SavesList.SelectedItem.ToString());
-            AuthorLabel.Text = $"Author: {sv.author}";
-            NameLabel.Text = $"Title: {sv.name}";
-            DateLabel.Text = $"Create Date: {sv.createdate}";
+            AuthorLabel.Text = $@"Author: {sv.author}
+Name: {sv.name}
+Date: {sv.createdate}";
+
         }
 
         private void button1_Click(object sender, EventArgs e)

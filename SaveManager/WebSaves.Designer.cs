@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.AuthorLabel = new System.Windows.Forms.Label();
-            this.NameLabel = new System.Windows.Forms.Label();
-            this.DateLabel = new System.Windows.Forms.Label();
             this.SavesList = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,29 +40,9 @@
             this.AuthorLabel.ForeColor = System.Drawing.Color.White;
             this.AuthorLabel.Location = new System.Drawing.Point(238, 13);
             this.AuthorLabel.Name = "AuthorLabel";
-            this.AuthorLabel.Size = new System.Drawing.Size(41, 13);
+            this.AuthorLabel.Size = new System.Drawing.Size(41, 39);
             this.AuthorLabel.TabIndex = 1;
-            this.AuthorLabel.Text = "Author:";
-            // 
-            // NameLabel
-            // 
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.ForeColor = System.Drawing.Color.White;
-            this.NameLabel.Location = new System.Drawing.Point(238, 26);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(41, 13);
-            this.NameLabel.TabIndex = 1;
-            this.NameLabel.Text = "Name: ";
-            // 
-            // DateLabel
-            // 
-            this.DateLabel.AutoSize = true;
-            this.DateLabel.ForeColor = System.Drawing.Color.White;
-            this.DateLabel.Location = new System.Drawing.Point(238, 39);
-            this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(36, 13);
-            this.DateLabel.TabIndex = 1;
-            this.DateLabel.Text = "Date: ";
+            this.AuthorLabel.Text = "Author:\r\nName:\r\nDate:\r\n";
             // 
             // SavesList
             // 
@@ -113,8 +91,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SavesList);
-            this.Controls.Add(this.DateLabel);
-            this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.AuthorLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WebSaves";
@@ -129,8 +105,6 @@
         #endregion
 
         private System.Windows.Forms.Label AuthorLabel;
-        private System.Windows.Forms.Label NameLabel;
-        private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.ListBox SavesList;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
