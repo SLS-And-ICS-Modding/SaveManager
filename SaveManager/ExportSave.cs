@@ -28,6 +28,7 @@ namespace SaveManager
             System.IO.File.WriteAllText($"./savegames/{textBox1.Text}.slsg", $"{DateTime.Now}\n{encrypted}");
             MessageBox.Show("Successfully saved!","Notify",MessageBoxButtons.OK,MessageBoxIcon.Information);
             Globals.bReloadRequired = true;
+            this.Close();
         }
     }
 }
