@@ -53,8 +53,18 @@ namespace SaveManager
         private void button1_Click(object sender, EventArgs e)
         {
             Save sv = saves1.Find(x => x.name == SavesList.SelectedItem.ToString());
+            
             if(sv.content != null)
             {
+                if (System.IO.File.Exists($"./savegames/{sv.name}.slsg"))
+                {
+                    var msg = MessageBox.Show("Save game with same name already exists, overwrite?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (msg != DialogResult.Yes)
+                    {
+                        return;
+                    }
+                    System.IO.File.Delete($"./savegames/{sv.name}.slsg");
+                }
                 System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}
 {sv.content}");
                 bNeedsRefresh = true;
