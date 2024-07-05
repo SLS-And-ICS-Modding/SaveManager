@@ -49,7 +49,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
             " "});
-            this.listBox1.Location = new System.Drawing.Point(13, 13);
+            this.listBox1.Location = new System.Drawing.Point(83, 12);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(356, 249);
             this.listBox1.TabIndex = 3;
@@ -67,7 +67,7 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Location = new System.Drawing.Point(375, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(74, 277);
             this.panel1.TabIndex = 4;
