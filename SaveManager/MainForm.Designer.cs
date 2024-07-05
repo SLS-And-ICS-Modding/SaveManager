@@ -36,6 +36,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.RefreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -46,6 +47,7 @@
             this.button1.Size = new System.Drawing.Size(110, 44);
             this.button1.TabIndex = 1;
             this.button1.Text = "Import Save";
+            this.toolTip1.SetToolTip(this.button1, "Load Save Game");
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -57,6 +59,7 @@
             this.button2.Size = new System.Drawing.Size(110, 44);
             this.button2.TabIndex = 1;
             this.button2.Text = "Export Save";
+            this.toolTip1.SetToolTip(this.button2, "Export Save Game");
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -68,6 +71,7 @@
             this.button3.Size = new System.Drawing.Size(110, 41);
             this.button3.TabIndex = 2;
             this.button3.Text = "Wipe current save";
+            this.toolTip1.SetToolTip(this.button3, "Wipe current save game");
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -91,6 +95,7 @@
             this.button4.Size = new System.Drawing.Size(110, 41);
             this.button4.TabIndex = 2;
             this.button4.Text = "Delete Save from manager";
+            this.toolTip1.SetToolTip(this.button4, "Delete selected save game");
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -102,6 +107,7 @@
             this.button5.Size = new System.Drawing.Size(110, 41);
             this.button5.TabIndex = 2;
             this.button5.Text = "Web saves";
+            this.toolTip1.SetToolTip(this.button5, "Web saves");
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -137,6 +143,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Timer RefreshTimer;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
