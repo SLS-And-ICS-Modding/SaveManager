@@ -55,7 +55,8 @@ namespace SaveManager
             Save sv = saves1.Find(x => x.name == SavesList.SelectedItem.ToString());
             if(sv.content != null)
             {
-                System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}\n{sv.content}");
+                System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}
+{sv.content}");
                 bNeedsRefresh = true;
             } else
             {
