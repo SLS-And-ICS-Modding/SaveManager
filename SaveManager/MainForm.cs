@@ -13,11 +13,11 @@ using System.Windows.Forms;
 
 namespace SaveManager
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         
         RegistryUtility reg = new RegistryUtility();
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
