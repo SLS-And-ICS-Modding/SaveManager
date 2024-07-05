@@ -91,7 +91,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.button1.BackgroundImage = global::SaveManager.Properties.Resources.save_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20;
+            this.button1.BackgroundImage = global::SaveManager.Properties.Resources.cloud_download_18dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -107,7 +107,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.button2.BackgroundImage = global::SaveManager.Properties.Resources.share_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20;
+            this.button2.BackgroundImage = global::SaveManager.Properties.Resources.save_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

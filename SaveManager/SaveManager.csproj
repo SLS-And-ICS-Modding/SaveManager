@@ -136,5 +136,8 @@
   <ItemGroup>
     <None Include="Resources\download_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud_download_18dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
