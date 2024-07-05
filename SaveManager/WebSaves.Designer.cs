@@ -33,6 +33,7 @@
             this.DateLabel = new System.Windows.Forms.Label();
             this.SavesList = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AuthorLabel
@@ -83,11 +84,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(238, 142);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(225, 71);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Upload Save";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
+            // 
             // WebSaves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 303);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SavesList);
             this.Controls.Add(this.DateLabel);
@@ -110,5 +123,6 @@
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.ListBox SavesList;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
