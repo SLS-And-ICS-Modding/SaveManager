@@ -59,7 +59,6 @@ namespace SaveManager
             {
                 
                 string temppatch = Path.GetTempPath();
-                MessageBox.Show(listBox1.SelectedItem.ToString());
                 string enc = System.IO.File.ReadAllText(list[listBox1.SelectedItem.ToString()]);
                 string dec = Encoding.UTF8.GetString(Convert.FromBase64String(enc.Split('\n')[1]));
                 reg.ClearRegistryKey("Software\\Cheesecake Dev\\Streamer Life Simulator");
