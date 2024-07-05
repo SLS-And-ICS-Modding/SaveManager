@@ -20,6 +20,7 @@ namespace SaveManager
         public MainForm()
         {
             InitializeComponent();
+            RefreshTimer.Start();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -104,6 +105,15 @@ namespace SaveManager
         private void button5_Click(object sender, EventArgs e)
         {
             wb.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(wb.bNeedsRefresh)
+            {
+                RefreshList();
+                wb.bNeedsRefresh = false;
+            }
         }
     }
     public class RegistryUtility

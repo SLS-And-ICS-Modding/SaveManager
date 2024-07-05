@@ -14,6 +14,7 @@ namespace SaveManager
 {
     public partial class WebSaves : Form
     {
+        public bool bNeedsRefresh = false;
         List<Save> saves1 = new List<Save>();
         public WebSaves()
         {
@@ -55,6 +56,7 @@ namespace SaveManager
             if(sv.content != null)
             {
                 System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}\n{sv.content}");
+                bNeedsRefresh = true;
             } else
             {
                 MessageBox.Show("Save is not seleceted", "Select save first",MessageBoxButtons.OK, MessageBoxIcon.Error);
