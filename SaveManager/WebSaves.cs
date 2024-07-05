@@ -58,6 +58,7 @@ namespace SaveManager
                 System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}
 {sv.content}");
                 bNeedsRefresh = true;
+                MessageBox.Show("Successfuly added save game to library","Notify",MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else
             {
                 MessageBox.Show("Save is not seleceted", "Select save first",MessageBoxButtons.OK, MessageBoxIcon.Error);
