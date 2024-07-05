@@ -113,7 +113,7 @@
             this.Controls.Add(this.comboBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UploadSave";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UploadSave";
             this.Load += new System.EventHandler(this.UploadSave_Load);
             this.ResumeLayout(false);
