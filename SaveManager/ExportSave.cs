@@ -25,7 +25,7 @@ namespace SaveManager
             reg.ExportRegistryKey("HKEY_CURRENT_USER\\Software\\Cheesecake Dev\\Streamer Life Simulator", temppatch);
             string output = System.IO.File.ReadAllText(temppatch);
             string encrypted = Convert.ToBase64String(Encoding.UTF8.GetBytes(output));
-            System.IO.File.WriteAllText($"./savegames/{textBox1.Text}.slsg", $"{DateTime.Now}\n{encrypted}");
+            System.IO.File.WriteAllText($"./savegames/{textBox1.Text}.slsg", $"{textBox1.Text}\n{encrypted}");
             MessageBox.Show("Successfully saved!","Notify",MessageBoxButtons.OK,MessageBoxIcon.Information);
             Globals.bReloadRequired = true;
             this.Close();
