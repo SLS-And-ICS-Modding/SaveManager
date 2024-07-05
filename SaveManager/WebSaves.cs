@@ -74,6 +74,11 @@ namespace SaveManager
                 MessageBox.Show("Save is not seleceted", "Select save first",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     class Save
     {
