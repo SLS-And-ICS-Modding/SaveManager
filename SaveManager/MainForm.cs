@@ -77,6 +77,11 @@ namespace SaveManager
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (listBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Select save game!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             var msg = MessageBox.Show("Do you want to delete your save game?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
             if (msg == DialogResult.Yes)
             {
@@ -93,6 +98,7 @@ namespace SaveManager
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
             var msg = MessageBox.Show("Do you want to wipe your save game?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (msg == DialogResult.Yes)
             {
