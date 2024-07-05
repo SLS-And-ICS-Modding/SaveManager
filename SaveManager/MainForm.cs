@@ -80,7 +80,7 @@ namespace SaveManager
             var msg = MessageBox.Show("Do you want to delete your save game?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
             if (msg == DialogResult.Yes)
             {
-                var msg2 = MessageBox.Show("Your save game will be deleted forever, do you want to continue?", "Last warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                var msg2 = MessageBox.Show("Your save game will be deleted forever.\n do you want to continue?", "Last warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (msg2 == DialogResult.Yes)
                     reg.ClearRegistryKey("Software\\Cheesecake Dev\\Streamer Life Simulator");
                 else
@@ -96,7 +96,7 @@ namespace SaveManager
             var msg = MessageBox.Show("Do you want to delete your save game?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (msg == DialogResult.Yes)
             {
-                var msg2 = MessageBox.Show("Your save game will be deleted forever, do you want to continue?", "Last warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                var msg2 = MessageBox.Show("Your save game will be wiped.\n This action is irreversible.\n do you want to continue?", "Last warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (msg2 == DialogResult.Yes)
                     System.IO.File.Delete(list[listBox1.SelectedItem.ToString()]);
                 else
