@@ -110,10 +110,10 @@ namespace SaveManager
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(wb.bNeedsRefresh)
+            if(Globals.bReloadRequired)
             {
                 RefreshList();
-                wb.bNeedsRefresh = false;
+                Globals.bReloadRequired = false;
             }
         }
 

@@ -68,7 +68,7 @@ namespace SaveManager
                 }
                 System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}
 {sv.content}");
-                bNeedsRefresh = true;
+                Globals.bReloadRequired = true;
                 MessageBox.Show("Successfuly added save game to library","Notify",MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else
             {

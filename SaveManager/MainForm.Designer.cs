@@ -41,9 +41,9 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(326, 13);
+            this.button1.Location = new System.Drawing.Point(326, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 48);
+            this.button1.Size = new System.Drawing.Size(110, 44);
             this.button1.TabIndex = 1;
             this.button1.Text = "Import Save";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,9 +52,9 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(326, 67);
+            this.button2.Location = new System.Drawing.Point(326, 64);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 48);
+            this.button2.Size = new System.Drawing.Size(110, 44);
             this.button2.TabIndex = 1;
             this.button2.Text = "Export Save";
             this.button2.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(326, 121);
+            this.button3.Location = new System.Drawing.Point(326, 118);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 45);
+            this.button3.Size = new System.Drawing.Size(110, 41);
             this.button3.TabIndex = 2;
             this.button3.Text = "Wipe current save";
             this.button3.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(326, 172);
+            this.button4.Location = new System.Drawing.Point(326, 169);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 45);
+            this.button4.Size = new System.Drawing.Size(110, 41);
             this.button4.TabIndex = 2;
             this.button4.Text = "Delete Save from manager";
             this.button4.UseVisualStyleBackColor = true;
@@ -97,9 +97,9 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(326, 223);
+            this.button5.Location = new System.Drawing.Point(326, 220);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 45);
+            this.button5.Size = new System.Drawing.Size(110, 41);
             this.button5.TabIndex = 2;
             this.button5.Text = "Web saves";
             this.button5.UseVisualStyleBackColor = true;
