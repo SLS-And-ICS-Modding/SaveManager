@@ -9,5 +9,7 @@ namespace SaveManager
     internal class Globals
     {
         public static bool bReloadRequired = false;
+
+        public static bool bWebReloadRequired = false;
     }
 }

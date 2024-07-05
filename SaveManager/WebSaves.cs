@@ -40,7 +40,7 @@ namespace SaveManager
         }
         private void WebSaves_Load(object sender, EventArgs e)
         {
-            
+            timer1.Start();
         }
 
         private void SavesList_SelectedIndexChanged(object sender, EventArgs e)
@@ -83,6 +83,15 @@ Date: {sv.createdate}";
         {
             us = new UploadSave();
             us.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(Globals.bWebReloadRequired)
+            {
+                FetchSaves();
+                Globals.bWebReloadRequired = false;
+            }
         }
     }
     class Save

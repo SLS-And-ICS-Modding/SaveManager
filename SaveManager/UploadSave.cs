@@ -56,6 +56,7 @@ namespace SaveManager
             sv.createdate = DateTime.Now.ToString();
             sv.content = System.IO.File.ReadAllText(GetPath(comboBox1.Text)).Split('\n')[1]; // a bit crashable, but idc for now
             Web.Upload.UploadSave(sv);
+            Globals.bWebReloadRequired = true;
             this.Close();
         }
     }
