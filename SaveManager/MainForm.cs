@@ -35,6 +35,8 @@ namespace SaveManager
             string output = System.IO.File.ReadAllText(temppatch);
             string encrypted = Convert.ToBase64String(Encoding.UTF8.GetBytes(output));
             System.IO.File.WriteAllText($"./savegames/{new Random().Next()}.slsg", $"{DateTime.Now}\n{encrypted}");*/
+            ExportSave exportSave = new ExportSave();
+            exportSave.Show();
         }
         private void RefreshList()
         {
