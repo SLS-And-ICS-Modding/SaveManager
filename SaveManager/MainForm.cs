@@ -104,6 +104,7 @@ namespace SaveManager
 
         private void button5_Click(object sender, EventArgs e)
         {
+            wb = new WebSaves();
             wb.Show();
         }
 
@@ -114,6 +115,11 @@ namespace SaveManager
                 RefreshList();
                 wb.bNeedsRefresh = false;
             }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     public class RegistryUtility

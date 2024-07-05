@@ -16,6 +16,7 @@ namespace SaveManager
     {
         public bool bNeedsRefresh = false;
         List<Save> saves1 = new List<Save>();
+        UploadSave us = new UploadSave();
         public WebSaves()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace SaveManager
         }
         private List<Save> FetchSaves()
         {
-            JArray j = JArray.Parse(new WebClient().DownloadString("http://localhost:8000/getsaves.php"));
+            JArray j = JArray.Parse(new WebClient().DownloadString($"{Web.Web.DOMAIN_URL}getsaves.php"));
             List<Save> saves = new List<Save>();
             foreach (var item in j)
             {
@@ -77,7 +78,8 @@ namespace SaveManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            us = new UploadSave();
+            us.Show();
         }
     }
     class Save
