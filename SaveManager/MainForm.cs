@@ -40,6 +40,7 @@ namespace SaveManager
         {
             if (!Directory.Exists("./savegames"))
                 Directory.CreateDirectory("./savegames");
+            list.Clear();
             foreach(var file in System.IO.Directory.GetFiles("./savegames"))
             {
                 string savename = System.IO.File.ReadAllText(file).Split('\n')[0];
