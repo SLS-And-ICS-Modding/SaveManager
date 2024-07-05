@@ -95,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UploadSave.resx">
       <DependentUpon>UploadSave.cs</DependentUpon>
@@ -116,6 +117,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_38dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_settings_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_18dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
