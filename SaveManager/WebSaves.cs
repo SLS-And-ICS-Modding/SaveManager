@@ -48,6 +48,18 @@ namespace SaveManager
             NameLabel.Text = $"Title: {sv.name}";
             DateLabel.Text = $"Create Date: {sv.createdate}";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Save sv = saves1.Find(x => x.name == SavesList.SelectedItem.ToString());
+            if(sv.content != null)
+            {
+                System.IO.File.WriteAllText($"./savegames/{sv.name}.slsg", $@"{sv.name}\n{sv.content}");
+            } else
+            {
+                MessageBox.Show("Save is not seleceted", "Select save first",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
     class Save
     {

@@ -32,6 +32,7 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.DateLabel = new System.Windows.Forms.Label();
             this.SavesList = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AuthorLabel
@@ -63,18 +64,31 @@
             // 
             // SavesList
             // 
+            this.SavesList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SavesList.FormattingEnabled = true;
             this.SavesList.Location = new System.Drawing.Point(13, 13);
             this.SavesList.Name = "SavesList";
-            this.SavesList.Size = new System.Drawing.Size(219, 277);
+            this.SavesList.Size = new System.Drawing.Size(219, 275);
             this.SavesList.TabIndex = 2;
             this.SavesList.SelectedIndexChanged += new System.EventHandler(this.SavesList_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(239, 219);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(225, 71);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Install";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // WebSaves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 303);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.SavesList);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.NameLabel);
@@ -95,5 +109,6 @@
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.ListBox SavesList;
+        private System.Windows.Forms.Button button1;
     }
 }

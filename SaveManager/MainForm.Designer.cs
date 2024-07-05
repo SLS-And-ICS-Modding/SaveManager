@@ -38,6 +38,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(326, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 48);
@@ -48,6 +49,7 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(326, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 48);
@@ -58,6 +60,7 @@
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(326, 121);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 45);
@@ -68,16 +71,18 @@
             // 
             // listBox1
             // 
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
             " "});
             this.listBox1.Location = new System.Drawing.Point(13, 13);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(307, 251);
+            this.listBox1.Size = new System.Drawing.Size(307, 249);
             this.listBox1.TabIndex = 3;
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(326, 172);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 45);
@@ -88,6 +93,7 @@
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(326, 223);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(110, 45);
