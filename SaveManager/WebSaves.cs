@@ -45,6 +45,8 @@ namespace SaveManager
 
         private void SavesList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (SavesList.SelectedItem == null)
+                return;
             Save sv = saves1.Find(x=>x.name == SavesList.SelectedItem.ToString());
             AuthorLabel.Text = $"Author: {sv.author}";
             NameLabel.Text = $"Title: {sv.name}";
