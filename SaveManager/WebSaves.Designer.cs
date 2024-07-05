@@ -28,38 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.AuthorLabel = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.DateLabel = new System.Windows.Forms.Label();
+            this.SavesList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // AuthorLabel
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(209, 279);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.AuthorLabel.AutoSize = true;
+            this.AuthorLabel.Location = new System.Drawing.Point(238, 13);
+            this.AuthorLabel.Name = "AuthorLabel";
+            this.AuthorLabel.Size = new System.Drawing.Size(41, 13);
+            this.AuthorLabel.TabIndex = 1;
+            this.AuthorLabel.Text = "Author:";
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(238, 26);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(41, 13);
+            this.NameLabel.TabIndex = 1;
+            this.NameLabel.Text = "Name: ";
+            // 
+            // DateLabel
+            // 
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.Location = new System.Drawing.Point(238, 39);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(36, 13);
+            this.DateLabel.TabIndex = 1;
+            this.DateLabel.Text = "Date: ";
+            // 
+            // SavesList
+            // 
+            this.SavesList.FormattingEnabled = true;
+            this.SavesList.Location = new System.Drawing.Point(13, 13);
+            this.SavesList.Name = "SavesList";
+            this.SavesList.Size = new System.Drawing.Size(219, 277);
+            this.SavesList.TabIndex = 2;
             // 
             // WebSaves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 303);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(394, 303);
+            this.Controls.Add(this.SavesList);
+            this.Controls.Add(this.DateLabel);
+            this.Controls.Add(this.NameLabel);
+            this.Controls.Add(this.AuthorLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "WebSaves";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WebSaves";
+            this.Load += new System.EventHandler(this.WebSaves_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label AuthorLabel;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Label DateLabel;
+        private System.Windows.Forms.ListBox SavesList;
     }
 }
