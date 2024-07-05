@@ -67,6 +67,7 @@
             this.Name = "ExportSave";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ExportSave";
+            this.Load += new System.EventHandler(this.ExportSave_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -8,6 +8,6 @@ namespace SaveManager.Web
 {
     public static class Web
     {
-        public static readonly string DOMAIN_URL = "http://localhost:8000/SaveManager/";
+        public static readonly string DOMAIN_URL = "https://zrd.ovh/SaveManager/";
     }
 }

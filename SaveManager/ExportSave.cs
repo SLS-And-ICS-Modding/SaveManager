@@ -30,5 +30,10 @@ namespace SaveManager
             Globals.bReloadRequired = true;
             this.Close();
         }
+
+        private void ExportSave_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
