@@ -19,8 +19,11 @@ namespace SaveManager
         RegistryUtility reg = new RegistryUtility();
         public MainForm()
         {
+
+            Web.Update.CheckUpdate();
             InitializeComponent();
             RefreshTimer.Start();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -14,7 +14,6 @@ namespace SaveManager
         [STAThread]
         static void Main()
         {
-            Web.Update.CheckUpdate();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
