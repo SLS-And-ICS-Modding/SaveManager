@@ -21,7 +21,6 @@ namespace SaveManager.Web
                 data["createdate"] = sv.createdate;
 
                 var response = client.UploadValues(Web.DOMAIN_URL + "uploadsave.php", "POST", data);
-                MessageBox.Show(Encoding.UTF8.GetString(response));
             }
         }
     }
