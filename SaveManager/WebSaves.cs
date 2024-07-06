@@ -26,6 +26,7 @@ namespace SaveManager
         {
             JArray j = JArray.Parse(new WebClient().DownloadString($"{Web.Web.DOMAIN_URL}getsaves.php"));
             List<Save> saves = new List<Save>();
+            SavesList.Items.Clear();
             foreach (var item in j)
             {
                 var save = new Save();
