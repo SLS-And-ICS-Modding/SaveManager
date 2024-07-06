@@ -99,6 +99,7 @@
     <Compile Include="WebSaves.Designer.cs">
       <DependentUpon>WebSaves.cs</DependentUpon>
     </Compile>
+    <Compile Include="Web\Update.cs" />
     <Compile Include="Web\Upload.cs" />
     <Compile Include="Web\Web.cs" />
     <EmbeddedResource Include="ExportSave.resx">
