@@ -11,5 +11,7 @@ namespace SaveManager
         public static bool bReloadRequired = false;
 
         public static bool bWebReloadRequired = false;
+
+        public static readonly string sBuild = "1.0.1";
     }
 }
