@@ -16,6 +16,8 @@ namespace SaveManager.Web
             var msgbox = MessageBox.Show("An newer version was released\nDo you want to update?", "New Update!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msgbox == DialogResult.Yes) {
                 Process.Start("https://github.com/SLS-And-ICS-Modding/SaveManager/releases");
+                //Changelog ch = new Changelog();
+                //ch.ShowDialog();
                 Environment.Exit(0);
             }
         }

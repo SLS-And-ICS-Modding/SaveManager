@@ -72,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Changelog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changelog.Designer.cs">
+      <DependentUpon>Changelog.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExportSave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="Web\Update.cs" />
     <Compile Include="Web\Upload.cs" />
     <Compile Include="Web\Web.cs" />
+    <EmbeddedResource Include="Changelog.resx">
+      <DependentUpon>Changelog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExportSave.resx">
       <DependentUpon>ExportSave.cs</DependentUpon>
     </EmbeddedResource>
