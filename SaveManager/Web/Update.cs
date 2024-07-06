@@ -21,7 +21,6 @@ namespace SaveManager.Web
         }
         public static void CheckUpdate()
         {
-            MessageBox.Show(new WebClient().DownloadString($"{Web.DOMAIN_URL}checkupdate.php?build={Globals.sBuild}"));
             using (WebClient client = new WebClient())
             {
                 if (client.DownloadString($"{Web.DOMAIN_URL}checkupdate.php?build={Globals.sBuild}") != "0")
